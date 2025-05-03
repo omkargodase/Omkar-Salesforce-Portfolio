@@ -156,4 +156,9 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
 
   });
+
 }
+
+$("#btn-download").click(function() {
+  $(this).toggleClass("downloaded");
+});

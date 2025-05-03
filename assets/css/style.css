@@ -1881,54 +1881,32 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 * RESUME
 	 */
 
-  .timeline-text { max-width: 700px; }
-
-    .download-btn {
-      position : relative;
-      top : -5px;
-      transform: translateY(-15px);
-      display: inline-block;
-      padding: 10px 20px;
-      margin-left: -10px;
-      font-size: 16px;
-      font-weight: bold;
-      color: white;
-      background: linear-gradient(45deg, #ff0080, #7928ca, #2afadf);
-      border-radius: 5px;
-      text-decoration: none;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .download-btn:hover {
-      transform: translateY(-5px);  /* Lift the button */
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);  /* Stronger shadow */
-    }
-
-    .download-btn:active {
-      transform: translateY(0);  /* Push back when clicked */
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    }
-
-  @keyframes multi-glow {
-    0% {
-      box-shadow:
-        0 0 12px rgba(255, 215, 0, 0.5),       /* Gold */
-        0 0 18px rgba(255, 87, 34, 0.4),       /* Red/Orange */
-        0 0 24px rgba(0, 153, 255, 0.3),       /* Blue */
-        0 0 30px rgba(138, 43, 226, 0.3),      /* Violet */
-        0 0 36px rgba(255, 20, 147, 0.3),      /* Pink */
-        0 0 42px rgba(255, 255, 0, 0.2);       /* Yellow */
-    }
-    100% {
-      box-shadow:
-        0 0 20px rgba(255, 215, 0, 0.9),
-        0 0 28px rgba(255, 87, 34, 0.7),
-        0 0 36px rgba(0, 153, 255, 0.6),
-        0 0 44px rgba(138, 43, 226, 0.6),
-        0 0 52px rgba(255, 20, 147, 0.6),
-        0 0 60px rgba(255, 255, 0, 0.5);
-    }
+   .download-btn {
+    position: relative;
+    top: 20px;
+    transform: translateY(-15px);
+    display: inline-block;
+    padding: 10px 24px;
+    margin-left: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    border-radius: 6px;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
   }
-
+  
+  .download-btn:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .download-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  }
+  
+  
 }
