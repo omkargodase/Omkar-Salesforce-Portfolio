@@ -516,50 +516,16 @@
         - #RESUME
       -->
 
-<!-- Include Font Awesome in your <head> section -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <article class="resume" data-page="resume">
 
-  <!-- Resume Download Section -->
-  <header>
-    <h2 class="h2 article-title">
-      <a href="#" class="download-btn" id="download-btn">
-        <i class="fas fa-download"></i> Download Resume
-      </a>
-    </h2>
-  </header>
-  
-  <!-- Script -->
-  <script>
-    const downloadBtn = document.getElementById("download-btn");
-  
-    downloadBtn.addEventListener("click", function (e) {
-      e.preventDefault();
-  
-      const resumeUrl = "./assets/images/OMKAR_RAJENDRA_GODASE_CV.pdf";
-  
-      // Create a hidden anchor to trigger download
-      const link = document.createElement('a');
-      link.href = resumeUrl;
-      link.download = "OMKAR_RAJENDRA_GODASE_CV.pdf";
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-  
-      // Update button on success
-      this.innerHTML = '<i class="fas fa-check-circle"></i> Resume Downloaded';
-      this.style.background = '#28a745';  // soft green
-      this.style.color = 'white';
-  
-      // Reset after 5 seconds
-      setTimeout(() => {
-        this.innerHTML = '<i class="fas fa-download"></i> Download Resume';
-        this.style.background = '';
-        this.style.color = '';
-      }, 5000);
-    });
-  </script>
-  
-      
+        <header>
+          <h2 class="h2 article-title"><a href="./assets/images/OMKAR_RAJENDRA_GODASE_CV.pdf" download="OMKAR_RAJENDRA_GODASE_CV" class="download-btn">
+              Download Resume
+            </a>
+          </h2>
+
+          </h2>
+        </header>
 
         <section class="timeline">
 
